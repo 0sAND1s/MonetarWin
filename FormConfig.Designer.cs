@@ -49,9 +49,9 @@
             this.lblPasswordUnlock.AutoSize = true;
             this.lblPasswordUnlock.Location = new System.Drawing.Point(22, 16);
             this.lblPasswordUnlock.Name = "lblPasswordUnlock";
-            this.lblPasswordUnlock.Size = new System.Drawing.Size(122, 13);
+            this.lblPasswordUnlock.Size = new System.Drawing.Size(117, 13);
             this.lblPasswordUnlock.TabIndex = 9;
-            this.lblPasswordUnlock.Text = "Parolă deblocare config.";
+            this.lblPasswordUnlock.Text = "Configuration password";
             // 
             // txtPasswordUnlock
             // 
@@ -68,7 +68,7 @@
             this.btnUnlockConfig.Name = "btnUnlockConfig";
             this.btnUnlockConfig.Size = new System.Drawing.Size(156, 23);
             this.btnUnlockConfig.TabIndex = 11;
-            this.btnUnlockConfig.Text = "Deblocare configurare";
+            this.btnUnlockConfig.Text = "Configuration unlock";
             this.btnUnlockConfig.UseVisualStyleBackColor = true;
             this.btnUnlockConfig.Click += new System.EventHandler(this.btnUnlockConfig_Click);
             // 
@@ -89,7 +89,7 @@
             this.grpConfig.Size = new System.Drawing.Size(485, 187);
             this.grpConfig.TabIndex = 12;
             this.grpConfig.TabStop = false;
-            this.grpConfig.Text = "Configurare";
+            this.grpConfig.Text = "Configuration";
             // 
             // btnResetConfig
             // 
@@ -97,7 +97,7 @@
             this.btnResetConfig.Name = "btnResetConfig";
             this.btnResetConfig.Size = new System.Drawing.Size(130, 23);
             this.btnResetConfig.TabIndex = 17;
-            this.btnResetConfig.Text = "Resetare configurație";
+            this.btnResetConfig.Text = "Configuration reset";
             this.btnResetConfig.UseVisualStyleBackColor = true;
             this.btnResetConfig.Click += new System.EventHandler(this.btnResetConfig_Click);
             // 
@@ -106,9 +106,9 @@
             this.lblWarnMsg.AutoSize = true;
             this.lblWarnMsg.Location = new System.Drawing.Point(6, 77);
             this.lblWarnMsg.Name = "lblWarnMsg";
-            this.lblWarnMsg.Size = new System.Drawing.Size(91, 13);
+            this.lblWarnMsg.Size = new System.Drawing.Size(92, 13);
             this.lblWarnMsg.TabIndex = 15;
-            this.lblWarnMsg.Text = "Mesaj atenționare";
+            this.lblWarnMsg.Text = "Warning message";
             // 
             // txtWarnMsg
             // 
@@ -126,9 +126,9 @@
             this.lblBranchAddress.AutoSize = true;
             this.lblBranchAddress.Location = new System.Drawing.Point(6, 50);
             this.lblBranchAddress.Name = "lblBranchAddress";
-            this.lblBranchAddress.Size = new System.Drawing.Size(66, 13);
+            this.lblBranchAddress.Size = new System.Drawing.Size(81, 13);
             this.lblBranchAddress.TabIndex = 11;
-            this.lblBranchAddress.Text = "Adresă filială";
+            this.lblBranchAddress.Text = "Branch address";
             // 
             // txtBranchAddress
             // 
@@ -146,7 +146,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 14;
-            this.btnCancel.Text = "Renunță";
+            this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
             // btnOK
@@ -164,9 +164,9 @@
             this.lblBranchName.AutoSize = true;
             this.lblBranchName.Location = new System.Drawing.Point(6, 24);
             this.lblBranchName.Name = "lblBranchName";
-            this.lblBranchName.Size = new System.Drawing.Size(61, 13);
+            this.lblBranchName.Size = new System.Drawing.Size(70, 13);
             this.lblBranchName.TabIndex = 10;
-            this.lblBranchName.Text = "Nume filială";
+            this.lblBranchName.Text = "Branch name";
             // 
             // txtBranchName
             // 

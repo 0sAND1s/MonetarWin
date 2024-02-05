@@ -32,16 +32,16 @@
             System.Windows.Forms.Label sumCurrentLabel;
             System.Windows.Forms.Label sumPrevLabel;
             System.Windows.Forms.Label remainingLabel;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gridAmounts = new System.Windows.Forms.DataGridView();
+            this.currencyDenomAmountBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sumCurrentTextBox = new System.Windows.Forms.TextBox();
+            this.currencyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sumPrevTextBox = new System.Windows.Forms.TextBox();
             this.remainingTextBox = new System.Windows.Forms.TextBox();
             this.descriptionLabel1 = new System.Windows.Forms.Label();
-            this.currencyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.currencyDenomAmountBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.PieceCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.denomValueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalValueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,39 +49,36 @@
             sumPrevLabel = new System.Windows.Forms.Label();
             remainingLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridAmounts)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencyDenomAmountBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // sumCurrentLabel
             // 
             sumCurrentLabel.AutoSize = true;
-            sumCurrentLabel.Location = new System.Drawing.Point(4, 257);
-            sumCurrentLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            sumCurrentLabel.Location = new System.Drawing.Point(3, 209);
             sumCurrentLabel.Name = "sumCurrentLabel";
-            sumCurrentLabel.Size = new System.Drawing.Size(111, 17);
+            sumCurrentLabel.Size = new System.Drawing.Size(87, 13);
             sumCurrentLabel.TabIndex = 2;
-            sumCurrentLabel.Text = "Total efectiv (1):";
+            sumCurrentLabel.Text = "Old ammount (1):";
             // 
             // sumPrevLabel
             // 
             sumPrevLabel.AutoSize = true;
-            sumPrevLabel.Location = new System.Drawing.Point(4, 289);
-            sumPrevLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            sumPrevLabel.Location = new System.Drawing.Point(3, 235);
             sumPrevLabel.Name = "sumPrevLabel";
-            sumPrevLabel.Size = new System.Drawing.Size(127, 17);
+            sumPrevLabel.Size = new System.Drawing.Size(93, 13);
             sumPrevLabel.TabIndex = 4;
-            sumPrevLabel.Text = "Sold calculator (2):";
+            sumPrevLabel.Text = "New ammount (2):";
             // 
             // remainingLabel
             // 
             remainingLabel.AutoSize = true;
-            remainingLabel.Location = new System.Drawing.Point(4, 314);
-            remainingLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            remainingLabel.Location = new System.Drawing.Point(3, 255);
             remainingLabel.Name = "remainingLabel";
-            remainingLabel.Size = new System.Drawing.Size(123, 17);
+            remainingLabel.Size = new System.Drawing.Size(96, 13);
             remainingLabel.TabIndex = 6;
-            remainingLabel.Text = "Diferența (1) - (2):";
+            remainingLabel.Text = "Remaining (1) - (2):";
             // 
             // gridAmounts
             // 
@@ -98,49 +95,55 @@
             this.gridAmounts.DataSource = this.currencyDenomAmountBindingSource;
             this.gridAmounts.Dock = System.Windows.Forms.DockStyle.Top;
             this.gridAmounts.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.gridAmounts.Location = new System.Drawing.Point(0, 23);
-            this.gridAmounts.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.gridAmounts.Location = new System.Drawing.Point(0, 19);
+            this.gridAmounts.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.gridAmounts.Name = "gridAmounts";
             this.gridAmounts.RowHeadersVisible = false;
             this.gridAmounts.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.gridAmounts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.gridAmounts.Size = new System.Drawing.Size(253, 227);
+            this.gridAmounts.Size = new System.Drawing.Size(190, 184);
             this.gridAmounts.StandardTab = true;
             this.gridAmounts.TabIndex = 1;
             this.gridAmounts.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.gridAmounts_CellValidating);
+            // 
+            // currencyDenomAmountBindingSource
+            // 
+            this.currencyDenomAmountBindingSource.AllowNew = false;
+            this.currencyDenomAmountBindingSource.DataSource = typeof(MonetarWin.CurrencyDenomAmount);
             // 
             // sumCurrentTextBox
             // 
             this.sumCurrentTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.sumCurrentTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currencyBindingSource, "SumCurrent", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, null, "N2"));
-            this.sumCurrentTextBox.Location = new System.Drawing.Point(140, 254);
-            this.sumCurrentTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.sumCurrentTextBox.Location = new System.Drawing.Point(105, 206);
             this.sumCurrentTextBox.Name = "sumCurrentTextBox";
             this.sumCurrentTextBox.ReadOnly = true;
-            this.sumCurrentTextBox.Size = new System.Drawing.Size(108, 22);
+            this.sumCurrentTextBox.Size = new System.Drawing.Size(82, 20);
             this.sumCurrentTextBox.TabIndex = 3;
             this.sumCurrentTextBox.TabStop = false;
             this.sumCurrentTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // currencyBindingSource
+            // 
+            this.currencyBindingSource.DataSource = typeof(MonetarWin.Currency);
+            // 
             // sumPrevTextBox
             // 
             this.sumPrevTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currencyBindingSource, "SumPrev", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.sumPrevTextBox.Location = new System.Drawing.Point(140, 284);
-            this.sumPrevTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.sumPrevTextBox.Location = new System.Drawing.Point(105, 231);
             this.sumPrevTextBox.MaxLength = 9;
             this.sumPrevTextBox.Name = "sumPrevTextBox";
-            this.sumPrevTextBox.Size = new System.Drawing.Size(108, 22);
+            this.sumPrevTextBox.Size = new System.Drawing.Size(82, 20);
             this.sumPrevTextBox.TabIndex = 5;
             this.sumPrevTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // remainingTextBox
             // 
             this.remainingTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.currencyBindingSource, "Remaining", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged, null, "N2"));
-            this.remainingTextBox.Location = new System.Drawing.Point(140, 311);
-            this.remainingTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.remainingTextBox.Location = new System.Drawing.Point(105, 253);
             this.remainingTextBox.Name = "remainingTextBox";
             this.remainingTextBox.ReadOnly = true;
-            this.remainingTextBox.Size = new System.Drawing.Size(108, 22);
+            this.remainingTextBox.Size = new System.Drawing.Size(82, 20);
             this.remainingTextBox.TabIndex = 7;
             this.remainingTextBox.TabStop = false;
             this.remainingTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -151,41 +154,31 @@
             this.descriptionLabel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.descriptionLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descriptionLabel1.Location = new System.Drawing.Point(0, 0);
-            this.descriptionLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.descriptionLabel1.Name = "descriptionLabel1";
-            this.descriptionLabel1.Size = new System.Drawing.Size(253, 23);
+            this.descriptionLabel1.Size = new System.Drawing.Size(190, 19);
             this.descriptionLabel1.TabIndex = 0;
-            this.descriptionLabel1.Text = "Descriere monedă";
+            this.descriptionLabel1.Text = "Currency";
             this.descriptionLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // currencyBindingSource
-            // 
-            this.currencyBindingSource.DataSource = typeof(MonetarWin.Currency);
-            // 
-            // currencyDenomAmountBindingSource
-            // 
-            this.currencyDenomAmountBindingSource.AllowNew = false;
-            this.currencyDenomAmountBindingSource.DataSource = typeof(MonetarWin.CurrencyDenomAmount);
             // 
             // PieceCount
             // 
             this.PieceCount.DataPropertyName = "PieceCount";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle1.Format = "N0";
-            this.PieceCount.DefaultCellStyle = dataGridViewCellStyle1;
-            this.PieceCount.FillWeight = 25.38071F;
-            this.PieceCount.HeaderText = "Bucăți";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle4.Format = "N0";
+            this.PieceCount.DefaultCellStyle = dataGridViewCellStyle4;
+            this.PieceCount.FillWeight = 25.59796F;
+            this.PieceCount.HeaderText = "Pieces";
             this.PieceCount.MaxInputLength = 4;
             this.PieceCount.Name = "PieceCount";
             // 
             // denomValueDataGridViewTextBoxColumn
             // 
             this.denomValueDataGridViewTextBoxColumn.DataPropertyName = "DenomName";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.denomValueDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
-            this.denomValueDataGridViewTextBoxColumn.FillWeight = 37.30965F;
-            this.denomValueDataGridViewTextBoxColumn.HeaderText = "Monedă";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.denomValueDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            this.denomValueDataGridViewTextBoxColumn.FillWeight = 38.86905F;
+            this.denomValueDataGridViewTextBoxColumn.HeaderText = "Denomination";
             this.denomValueDataGridViewTextBoxColumn.Name = "denomValueDataGridViewTextBoxColumn";
             this.denomValueDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -193,18 +186,18 @@
             // 
             this.totalValueDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.totalValueDataGridViewTextBoxColumn.DataPropertyName = "TotalValueDenom";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle3.Format = "N2";
-            dataGridViewCellStyle3.NullValue = "0";
-            this.totalValueDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.totalValueDataGridViewTextBoxColumn.FillWeight = 37.30965F;
-            this.totalValueDataGridViewTextBoxColumn.HeaderText = "Valoare";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.Format = "N2";
+            dataGridViewCellStyle6.NullValue = "0";
+            this.totalValueDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
+            this.totalValueDataGridViewTextBoxColumn.FillWeight = 35.533F;
+            this.totalValueDataGridViewTextBoxColumn.HeaderText = "Value";
             this.totalValueDataGridViewTextBoxColumn.Name = "totalValueDataGridViewTextBoxColumn";
             this.totalValueDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ControlCurrency
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -216,13 +209,12 @@
             this.Controls.Add(this.descriptionLabel1);
             this.Controls.Add(this.sumPrevTextBox);
             this.Controls.Add(this.remainingTextBox);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ControlCurrency";
-            this.Size = new System.Drawing.Size(253, 344);
+            this.Size = new System.Drawing.Size(190, 280);
             this.Load += new System.EventHandler(this.UCCurrency_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridAmounts)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.currencyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.currencyDenomAmountBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currencyBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

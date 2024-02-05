@@ -138,7 +138,7 @@ namespace MonetarWin
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveCurrencies(theCurrencies);
-            MessageBox.Show("Salvat", AppName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Saved", AppName, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         
         private void printToolStripMenuItem_Click(object sender, EventArgs e)

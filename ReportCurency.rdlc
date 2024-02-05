@@ -82,7 +82,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Buc.</Value>
+                                  <Value>Pieces</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -146,7 +146,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Monedă</Value>
+                                  <Value>Denomination</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -210,7 +210,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Valoare</Value>
+                                  <Value>Value</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>

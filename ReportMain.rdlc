@@ -71,7 +71,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value EvaluationMode="Constant">Total efectiv (1) =</Value>
+                                      <Value EvaluationMode="Constant">Old sum (1) =</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                         <Format>0.00;(0.00)</Format>
@@ -104,7 +104,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value EvaluationMode="Constant">Sold calculator (2) =</Value>
+                                      <Value EvaluationMode="Constant">New sum (2) =</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                         <Format>0.00;(0.00)</Format>
@@ -138,7 +138,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value EvaluationMode="Constant">Diferenta (1) - (2) =</Value>
+                                      <Value EvaluationMode="Constant">Difference (1) - (2) =</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                         <Format>0.00;(0.00)</Format>
@@ -418,7 +418,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="Data/Ora: " &amp; Globals!ExecutionTime</Value>
+                      <Value>="Date/Time: " &amp; Globals!ExecutionTime</Value>
                       <Style>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -452,7 +452,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="Punct de lucru: " &amp; Parameters!BranchName.Value</Value>
+                      <Value>="Branch: " &amp; Parameters!BranchName.Value</Value>
                       <Style>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -494,7 +494,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Am predat:</Value>
+                      <Value>I handed over:</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -523,7 +523,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Am primit:</Value>
+                      <Value>I received:</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
@@ -553,7 +553,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Observații:</Value>
+                      <Value>Notes:</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>

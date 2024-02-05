@@ -72,28 +72,28 @@
             this.printToolStripMenuItem,
             this.configToolStripMenuItem});
             this.operationsToolStripMenuItem.Name = "operationsToolStripMenuItem";
-            this.operationsToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.operationsToolStripMenuItem.Text = "&Operațiuni";
+            this.operationsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.operationsToolStripMenuItem.Text = "&Actions";
             // 
             // salvareToolStripMenuItem
             // 
             this.salvareToolStripMenuItem.Name = "salvareToolStripMenuItem";
-            this.salvareToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.salvareToolStripMenuItem.Text = "&Salvare";
+            this.salvareToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salvareToolStripMenuItem.Text = "&Save";
             this.salvareToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
             // 
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.printToolStripMenuItem.Text = "Ti&părire";
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.printToolStripMenuItem.Text = "&Print";
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // configToolStripMenuItem
             // 
             this.configToolStripMenuItem.Name = "configToolStripMenuItem";
-            this.configToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
-            this.configToolStripMenuItem.Text = "&Configurare";
+            this.configToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.configToolStripMenuItem.Text = "&Configuration";
             this.configToolStripMenuItem.Click += new System.EventHandler(this.configToolStripMenuItem_Click);
             // 
             // ajutorToolStripMenuItem
@@ -101,14 +101,14 @@
             this.ajutorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.despreProgramToolStripMenuItem});
             this.ajutorToolStripMenuItem.Name = "ajutorToolStripMenuItem";
-            this.ajutorToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.ajutorToolStripMenuItem.Text = "Ajutor";
+            this.ajutorToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.ajutorToolStripMenuItem.Text = "&Help";
             // 
             // despreProgramToolStripMenuItem
             // 
             this.despreProgramToolStripMenuItem.Name = "despreProgramToolStripMenuItem";
-            this.despreProgramToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.despreProgramToolStripMenuItem.Text = "Despre program";
+            this.despreProgramToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.despreProgramToolStripMenuItem.Text = "About";
             this.despreProgramToolStripMenuItem.Click += new System.EventHandler(this.aboutProgramToolStripMenuItem_Click);
             // 
             // statusStrip1
