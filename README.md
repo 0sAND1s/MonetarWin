@@ -1,9 +1,9 @@
 # MonetarWin
 
-![ScreenShot](https://raw.githubusercontent.com/0sAND1s/MonetarWin/main/FormMain.png)
-![ScreenShot](https://raw.githubusercontent.com/0sAND1s/MonetarWin/main/Configuration.png)
-![ScreenShot](https://raw.githubusercontent.com/0sAND1s/MonetarWin/main/ReportPage1.png)
-![ScreenShot](https://raw.githubusercontent.com/0sAND1s/MonetarWin/main/ReportPage2.png)
+![ScreenShot](https://raw.githubusercontent.com/0sAND1s/MonetarWin/master/FormMain.png)
+![ScreenShot](https://raw.githubusercontent.com/0sAND1s/MonetarWin/master/Configuration.png)
+![ScreenShot](https://raw.githubusercontent.com/0sAND1s/MonetarWin/master/ReportPage1.png)
+![ScreenShot](https://raw.githubusercontent.com/0sAND1s/MonetarWin/master/ReportPage2.png)
 
 This program is a desktop application for Windows, usefull for exchange offices or stores, for tracking the cash ammount in several currencies.
 It produces a printable report with calculated totals for each currency. The report is also produced in PDF/Excel/Word format.
